@@ -2,7 +2,7 @@ name: Update Filter Lists
 
 on:
   schedule:
-    - cron: "0 5 * * *"
+    - cron: "0 3 * * *"
   push:
     branches:
       - main
@@ -22,7 +22,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
         with:
-          repository: "mrrfv/cloudflare-gateway-pihole-scripts"
+          repository: "thienbho/cloudflare-gateway-pihole-scripts"
           ref: "v1"
 
       - name: Install Node.js
